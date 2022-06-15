@@ -10,23 +10,23 @@ body {
 		background: lightgray;
 
 		font-family: 'SST', sans-serif;
+
+		user-select: none;
 }
 
 #app {
 		display: grid;
-		gap: 50px;
-
 		grid-template-columns: repeat(3, 1fr);
+		gap: 50px;
 }
 
 .container {
 		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 		gap: 50px;
 
 		width: 100%;
 		margin: 0 auto;
-
-		grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
@@ -47,6 +47,8 @@ body {
 
 img {
 		width: 100%;
+
+		-webkit-user-drag: none;
 }
 
 .card-title-user {
